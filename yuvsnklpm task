@@ -1,0 +1,57 @@
+import java.util.Scanner;
+class one{
+    public static void art(){
+        int a=15;
+        int b=40;
+        int c=a+b;
+        int d=a-b;
+        int f=a*c;
+        int e=a/b;
+        int m=a%d;
+        System.out.println("add is "+c+"\nsub is "+d+"\nmul is "+f+"\ndiv is "+e+"\n mod div is "+m);
+    }
+    public static void log(){
+        int a=1;
+        int b=0;
+        System.out.println((a!=1)&&(b!=0));
+          System.out.println((a!=1)||(b!=0));
+    }
+    public static void bit(){
+        int a=1;
+        int b=0;
+       int  d=a|b;
+        System.out.println(d);
+        System.out.println(a!=b);
+    }
+    public static void asign(){
+        int a=44;
+        int b=37;
+        int c=a+=1;
+        int d=b-=35;
+       int  f=a*=5;
+        System.out.println(c);
+          System.out.println(d);
+            System.out.println(f);
+      
+    }
+public static void main(String args[])
+{
+    Scanner s=new Scanner(System.in);
+    System.out.println("enter input\n");
+    System.out.println("1.arithmetic opertor\n2.log operator\n3.bitwise operator\n4.asign operator\n");
+    int ch=s.nextInt();
+  
+    switch(ch) {
+        case 1:art();
+        break;
+        case 2 : log();
+        break;
+        case 3 : bit();
+        break;
+        case 4 : asign();
+        break;
+    }
+    s.close();
+    
+}
+}
